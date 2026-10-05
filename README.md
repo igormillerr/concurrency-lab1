@@ -28,3 +28,18 @@
 * Использование системы сборки Gradle
 * Код должен быть отлажен и протестирован
 * Настроен CI в GH Actions
+
+
+Requirements:
+Java 21
+
+Run:
+./gradlew run / запуск Main из IDE
+
+Environment:
+PROGRAMMERS_COUNT
+WAITER_COUNT
+PORTION_COUNT
+
+Tests:
+./gradlew test

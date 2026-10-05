@@ -16,7 +16,6 @@ public record AppConfiguration(int programmersCount, int waiterCount, int totalP
 
     public AppConfiguration {
         validate(programmersCount, waiterCount, totalPortionCount);
-
     }
 
     private static void validate(int programmersCount, int waiterCount, int totalPortionCount) {
@@ -47,7 +46,7 @@ public record AppConfiguration(int programmersCount, int waiterCount, int totalP
             try {
                 return Integer.parseInt(env);
             } catch (NumberFormatException e) {
-                System.out.printf("Parsing error of " + envName + " : ", e);
+                System.out.printf("Parsing error of " + envName + "\n");
             }
         }
         return defaultValue;
